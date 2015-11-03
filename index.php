@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1> Test page PHP </h1>
+<h1>K Test page PHP </h1>
 <?php 
 
 //VAR definitions"
