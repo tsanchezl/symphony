@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <body>
 <h1> Test page PHP </h1>
 <?php 
@@ -9,11 +10,6 @@ $x = "hello my name is Thomas,";
 $y = "Whats your name?";
 //$cars = array("seat","bmw","mercedes");
 function newline() {
-/*	global $x,$y;
-	print ("prova de print $x + $y");
-	$x++;
-*/
-
 echo "<br>";
 }
 
@@ -23,10 +19,6 @@ function list_cars() {
 }
 newline();
 list_cars();
-//echo $GLOBALS['x'] + "," + $GLOBALS['y']; 
-//end script
-
-
 class cotxe {
 
 	function cotxe (){
@@ -36,19 +28,16 @@ class cotxe {
 	}
 }
 
-
 // creació d'un objecte tipus cotxe
-
 $bibi = new cotxe();
-
 // es mostra la propietat model de l'objecte cotxe
 newline();
 echo "$bibi->model";
-
 // Indica el tamany del string
 newline();
 echo "la frase $x medeix:",strlen($x);
-
+newline();
+echo "\"la frase $y\" té:",str_word_count($y)," paraules";
  ?>
 <h1> End Test page </h1>
 
