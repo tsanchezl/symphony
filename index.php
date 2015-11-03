@@ -8,7 +8,12 @@
 //VAR definitions"
 $x = "hello my name is Thomas,";
 $y = "Whats your name?";
+define("WELLCOME","<h2>Missatge de benvinguda</h2><br>");
 //$cars = array("seat","bmw","mercedes");
+
+
+
+//FUNCTIONS
 function newline() {
 echo "<br>";
 }
@@ -17,7 +22,9 @@ function list_cars() {
 	$cars = array("seat","bmw","mercedes");
 	var_dump($cars);
 }
-newline();
+
+echo WELLCOME;
+
 list_cars();
 class cotxe {
 
@@ -37,8 +44,17 @@ echo "$bibi->model";
 newline();
 echo "la frase $x medeix:",strlen($x);
 newline();
-echo "\"la frase $y\" té:",str_word_count($y)," paraules";
+echo "la frase \"$y\" té:",str_word_count($y)," paraules";
+newline();
+echo "la frase \"$x\" al revés:",strrev($x);
+newline();
+$match=strpos("$x","Thomas");
+echo $match;
+newline();
+echo str_replace("Thomas","Sanchez",$x);
+
  ?>
+
 <h1> End Test page </h1>
 
 </body>
