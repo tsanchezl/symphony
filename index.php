@@ -5,28 +5,23 @@
 <?php 
 
 //VAR definitions"
-$x = hello;
-$y = world;
+$x = "hello my name is Thomas,";
+$y = "Whats your name?";
 //$cars = array("seat","bmw","mercedes");
-function proba() {
-	global $x,$y;
+function newline() {
+/*	global $x,$y;
 	print ("prova de print $x + $y");
 	$x++;
+*/
+
+echo "<br>";
 }
-proba();
-echo "<br>";
-proba();
-echo "<br>";
-proba();
-echo "<br>";
-proba();
 
 function list_cars() {
 	$cars = array("seat","bmw","mercedes");
-	echo "<br>";
 	var_dump($cars);
 }
-
+newline();
 list_cars();
 //echo $GLOBALS['x'] + "," + $GLOBALS['y']; 
 //end script
@@ -47,9 +42,12 @@ class cotxe {
 $bibi = new cotxe();
 
 // es mostra la propietat model de l'objecte cotxe
-
+newline();
 echo "$bibi->model";
 
+// Indica el tamany del string
+newline();
+echo "la frase $x medeix:",strlen($x);
 
  ?>
 <h1> End Test page </h1>
