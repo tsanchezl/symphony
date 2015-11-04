@@ -1,1 +1,0 @@
-/var/www/exercicis_php/index_2.php
